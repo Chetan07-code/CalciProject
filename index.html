@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Project</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div class="formstyle">
+      <form name="form">
+        <input type="text" name="answers" /><br /><br />
+        <input type="button" value="1" onclick="form.answers.value +='1'" />
+        <input type="button" value="2" onclick="form.answers.value +='2'" />
+        <input type="button" value="3" onclick="form.answers.value +='3'" />
+        <br /><br />
+        <input type="button" value="4" onclick="form.answers.value +='4'" />
+        <input type="button" value="5" onclick="form.answers.value +='5'" />
+        <input type="button" value="6" onclick="form.answers.value +='6'" />
+        <br /><br />
+        <input type="button" value="7" onclick="form.answers.value +='7'" />
+        <input type="button" value="8" onclick="form.answers.value +='8'" />
+        <input type="button" value="9" onclick="form.answers.value +='9'" />
+        <br /><br />
+        <input type="button" value="+" onclick="form.answers.value +='+'" />
+        <input type="button" value="-" onclick="form.answers.value +='-'" />
+        <input type="button" value="/" onclick="form.answers.value +='/'" />
+        <br /><br />
+        <input type="button" value="*" onclick="form.answers.value +='*'" />
+        <input type="button" value="0" onclick="form.answers.value +='0'" />
+        <input
+          type="button"
+          value="="
+          onclick="form.answers.value =eval(form.answers.value)"
+        />
+        <br /><br />
+        <input
+          type="button"
+          value="Clear All"
+          onclick="form.answers.value = ''
+        "
+        />
+      </form>
+    </div>
+  </body>
+</html>
